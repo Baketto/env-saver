@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Reading Time",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "name": "Env Saver",
+  "description": "Check and tag environments websites",
   "version": "1.0",
   "permissions": ["storage", "activeTab", "tabs"],
   "background": {
