@@ -1,21 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "Env Saver",
-  "description": "Check and tag environments websites",
+  "name": "ENV Saver",
+  "description": "Display tag on environments websites",
   "version": "1.0",
   "permissions": ["storage", "activeTab", "tabs"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
-    "default_title": "Click Me",
-    "default_popup": "popup.html",
+    "default_title": "ENV Saver",
+    "default_popup": "popup/popup.html",
     "default_icons": {
       "16": "assets/icon16.png",
       "32": "assets/icon32.png",
       "48": "assets/icon48.png",
       "128": "assets/icon128.png"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

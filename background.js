@@ -7,7 +7,6 @@ chrome.tabs.onUpdated.addListener((id, changeInfo, tab) => {
 	chrome.tabs.query({currentWindow: true, active: true}, function() {
 		// Lecture de la variable 'environments'
 		chrome.storage.local.get(['environments']).then((result) => {
-			console.log(result)
 			if (result.environments !== undefined) {
 				// On vérifie si on environnement match l'URL actuelle
 				result.environments.forEach(env => {
